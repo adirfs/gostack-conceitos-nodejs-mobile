@@ -27,7 +27,7 @@ export default function App() {
     const repositoryIndex = repositories.findIndex(
       (repository) => repository.id == id
     );
-    let repositoriesWork = [...repositories];
+    const repositoriesWork = [...repositories];
     repositoriesWork[repositoryIndex].likes =
       repositoriesWork[repositoryIndex].likes + 1;
 
